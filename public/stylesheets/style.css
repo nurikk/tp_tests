@@ -3926,7 +3926,7 @@ html.flexbox {
  */
 .brand {
   font-family: "Helvetica Neue", sans-serif!important;
-  color: #4a8ec2!important;
+  color: #00b0dd!important;
 }
 
 .brand-face {
@@ -3935,7 +3935,7 @@ html.flexbox {
 
 .brand-color,
 .brand-colour {
-  color: #4a8ec2!important;
+  color: #00b0dd!important;
 }
 
 /*------------------------------------*\
@@ -4061,3 +4061,16 @@ html.flexbox {
   }
 }
 /* endif */
+.header-bar {
+  background: #008baf;
+}
+
+.content-wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.login-button,
+.filters {
+  float: right;
+}

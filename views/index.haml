@@ -14,19 +14,19 @@
       </script>
     %link{:rel => "stylesheet", :type => "text/css", :href => "/stylesheets/style.css"}
   %body
-    %header
-      .header_bar
-        .content_wrapper.cleared
+    %header.grid-wrapper
+      .header-bar
+        .content-wrapper.cf
+          .login-button
+            %a{:href => "/users/sign_in?locale=ru"} Вход
           .filters
             %p.flag.ru_flag Русский
             .filter_inner_wrapper
               %ul
                 %li
                   %a.flag.en_flag{:href => "/login?locale=en"} English
-          .login_button
-            %a{:href => "/users/sign_in?locale=ru"} Вход
-      .header_content
-        .content_wrapper.cleared
+      .header-content
+        .content-wrapper.cf
           %h1
             %a.logo{:href => "/users/sign_in?locale=ru"} TravelPayouts.com
           %nav
@@ -39,7 +39,7 @@
                 %a{:href => "http://www.aviasales.ru/affiliateprogram"} Программа
               %li
                 %a{:href => "https://aviasales.zendesk.com/home", :target => "_blank"} Помощь
-    .content
+    .content.content-wrapper
       .carousel
         %ul
           %li
