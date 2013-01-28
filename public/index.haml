@@ -1,0 +1,180 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %title TP main
+    /[if lt IE 9]
+      <script>
+      var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+      "figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+      "progress,section,time,video").split(',');
+      for (var i = 0; i < e.length; i++) {
+      document.createElement(e[i]);
+      }
+      </script>
+  %body
+    %header
+      .header_bar
+        .content_wrapper.cleared
+          .filters
+            %p.flag.ru_flag Русский
+            .filter_inner_wrapper
+              %ul
+                %li
+                  %a.flag.en_flag{:href => "/login?locale=en"} English
+          .login_button
+            %a{:href => "/users/sign_in?locale=ru"} Вход
+      .header_content
+        .content_wrapper.cleared
+          %h1
+            %a.logo{:href => "/users/sign_in?locale=ru"} TravelPayouts.com
+          %nav
+            %ul
+              %li
+                %a{:href => "http://www.aviasales.ru/"} Главная
+              %li
+                %a{:href => "http://www.aviasales.ru/content/o-proekte"} О нас
+              %li
+                %a{:href => "http://www.aviasales.ru/affiliateprogram"} Программа
+              %li
+                %a{:href => "https://aviasales.zendesk.com/home", :target => "_blank"} Помощь
+    .content
+      .carousel
+        %ul
+          %li
+            Подробная статистика в режиме реального времени.
+            %a{:href => "#"} Узнать больше
+      %section
+        %header
+          %h2 Моментальная регистрация
+        %div
+          %form{:action => "#"}
+            %fieldset
+              %div
+                %label Ваше имя
+                %input{:type => "text"}/
+              %div
+                %label Адрес электронной почты
+                %input{:type => "email"}/
+              %div
+                %div
+                  %label Пароль
+                  %input{:type => "password"}/
+                %div
+                  %label Пароль повторно
+                  %input{:type => "text"}/
+              %div
+                %div
+                  %label
+                    Адрес вебсайта
+                    %span (необязательно)
+                  %input{:type => "text"}/
+                %div
+                  %label
+                    Промокод
+                    %span (необязательно)
+                  %input{:type => "text"}/
+              %div
+                %input{:type => "checkbox"}/
+                %label
+                  Я согласен с условиями
+                  %a{:href => "#"} договора-оферты
+              %div
+                %input{:type => "submit"}/
+      %section
+        %header
+          %h2 Отзывы наших партнёров
+        %article.emirates
+          %header
+            %h3
+              %a{:href => "#"} Emitates
+          %p
+            Текст
+        %article.webjet
+          %header
+            %h3
+              %a{:href => "#"} WebJet
+          %p
+            Текст
+        %article.tripsta
+          %header
+            %h3
+              %a{:href => "#"} Tripsta
+          %p
+            Текст
+      %section
+        %header
+          %h2 Топ-10 выплат за октябрь '12
+        %ul
+          %li
+            Партнёр
+            %span 123456 р.
+          %li
+            Партнёр
+            %span 123456 р.
+          %li
+            Партнёр
+            %span 123456 р.
+          %li
+            Партнёр
+            %span 123456 р.
+          %li
+            Партнёр
+            %span 123456 р.
+          %li
+            Партнёр
+            %span 123456 р.
+          %li
+            Партнёр
+            %span 123456 р.
+          %li
+            Партнёр
+            %span 123456 р.
+        %footer
+          Мы уже выплатили
+          %span 26 159 518 руб.
+      %section
+        %header
+          %h2 О партнёрской программе TravelPayouts
+        %article
+          %header
+            %h3 Если у вас есть сайт
+          %p
+            У вас есть сайт или блог о туризме и путешествиях, форум или региональный портал? Дайте пользователям возможность искать дешёвые авиабилеты прямо у Вас на сайте и зарабатывайте с проданных авиабилетов и других продуктов от 50 до 70% дохода aviasales.ru.
+          %ul
+            %li Владельцы сайтов (рекомендуемая тематика: туризм, путешествия, региональные порталы, женские сайты, форумы и т.д.);
+            %li Блогеры;
+            %li Владельцы групп в социальных сетях (Twitter, VK, Facebook, Одноклассники и т.д.);
+            %li
+              SEO-специалисты (
+              %a{:href => "#"}> допустимые типы трафика
+              );
+            %li
+              Турагентства (
+              %a{:href => "#"}> частые вопросы от турагентств
+              );
+            %li А также все, кто хочет зарабатывать на продаже авиабилетов
+        %article
+          %header
+            %h3 Кто может стать нашим партнёром
+          %ul
+            %li Владельцы сайтов (рекомендуемая тематика: туризм, путешествия, региональные порталы, женские сайты, форумы и т.д.);
+            %li Блогеры;
+            %li Владельцы групп в социальных сетях (Twitter, VK, Facebook, Одноклассники и т.д.);
+            %li
+              SEO-специалисты (
+              %a{:href => "#"}> допустимые типы трафика
+              );
+            %li
+              Турагентства (
+              %a{:href => "#"}> частые вопросы от турагентств
+              );
+            %li А также все, кто хочет зарабатывать на продаже авиабилетов
+        %article
+          %header
+            %h3 Как это работает
+          %p
+            Вы размещаете форму поиска авиабилетов у себя на сайте. Если пользователь заинтересован в покупке авиабилета, а форма отчетливо видна на странице, то он ищет билет, бронирует и покупает его. Вы получаете свою комиссию 50-70% от нашего дохода с проданного авиабилета. Кроме того, мы платим комиссию за бронирование отелей и другие полезные продукты. Вы размещаете форму поиска авиабилетов у себя на сайте. Если пользователь заинтересован в
+    %footer
+      %p
+        \© 2556 TravelPayouts
