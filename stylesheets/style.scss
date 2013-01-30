@@ -1,17 +1,12 @@
 @import "vars";
 @import "settings";
 @import "inuit.css/inuit";
-
-.header-bar {
-  background: $dark-brand-color;
-}
+@import "globals/base";
+@import "layouts/header";
+@import "layouts/content_main_page";
 
 .content-wrapper  {
+  @extend .cf;
   width: $content-width;
   margin: 0 auto;
-}
-
-.login-button,
-.filters {
-  float: right;
 }

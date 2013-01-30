@@ -14,126 +14,132 @@
       </script>
     %link{:rel => "stylesheet", :type => "text/css", :href => "/stylesheets/style.css"}
   %body
-    %header.grid-wrapper
+    %header
       .header-bar
-        .content-wrapper.cf
+        .content-wrapper
           .login-button
             %a{:href => "/users/sign_in?locale=ru"} Вход
           .filters
-            %p.flag.ru_flag Русский
+            %p.flag.ru_flag
+              %i.s.s--flag_ru
+              Русский
             .filter_inner_wrapper
               %ul
                 %li
-                  %a.flag.en_flag{:href => "/login?locale=en"} English
+                  %a.flag.en_flag{:href => "/login?locale=en"}
+                    %i.s.s--flag_en
+                    English
       .header-content
-        .content-wrapper.cf
-          %h1
-            %a.logo{:href => "/users/sign_in?locale=ru"} TravelPayouts.com
-          %nav
-            %ul
-              %li
-                %a{:href => "http://www.aviasales.ru/"} Главная
-              %li
-                %a{:href => "http://www.aviasales.ru/content/o-proekte"} О нас
-              %li
-                %a{:href => "http://www.aviasales.ru/affiliateprogram"} Программа
-              %li
-                %a{:href => "https://aviasales.zendesk.com/home", :target => "_blank"} Помощь
-    .content.content-wrapper
-      .carousel
-        %ul
-          %li
-            Подробная статистика в режиме реального времени.
-            %a{:href => "#"} Узнать больше
-      %section
-        %header
-          %h2 Моментальная регистрация
-        %div
-          %form{:action => "#"}
-            %fieldset
-              %div
-                %label Ваше имя
-                %input{:type => "text"}/
-              %div
-                %label Адрес электронной почты
-                %input{:type => "email"}/
-              %div
+        .content-wrapper
+          .grid-wrapper
+            %h1
+              %a.logo{:href => "/users/sign_in?locale=ru"} TravelPayouts.com
+            %nav
+              %ul.nav
+                %li
+                  %a{:href => "http://www.aviasales.ru/"} Главная
+                %li
+                  %a{:href => "http://www.aviasales.ru/content/o-proekte"} О нас
+                %li
+                  %a{:href => "http://www.aviasales.ru/affiliateprogram"} Программа
+                %li
+                  %a{:href => "https://aviasales.zendesk.com/home", :target => "_blank"} Помощь
+    .content-wrapper
+      .grid-wrapper
+        .carousel
+          %ul
+            %li
+              Подробная статистика в режиме реального времени.
+              %a{:href => "#"} Узнать больше
+        %section.g.one-half.island
+          %header
+            %h2 Моментальная регистрация
+          %div
+            %form{:action => "#"}
+              %fieldset
                 %div
-                  %label Пароль
-                  %input{:type => "password"}/
-                %div
-                  %label Пароль повторно
+                  %label Ваше имя
                   %input{:type => "text"}/
-              %div
                 %div
+                  %label Адрес электронной почты
+                  %input{:type => "email"}/
+                %div.grid-wrapper
+                  %div.g.one-half
+                    %label Пароль
+                    %input{:type => "password"}/
+                  %div.g.one-half
+                    %label Пароль повторно
+                    %input{:type => "text"}/
+                %div.grid-wrapper
+                  %div.g.one-half
+                    %label
+                      Адрес вебсайта
+                      %span (необязательно)
+                    %input{:type => "text"}/
+                  %div.g.one-half
+                    %label
+                      Промокод
+                      %span (необязательно)
+                    %input{:type => "text"}/
+                %div
+                  %input{:type => "checkbox"}/
                   %label
-                    Адрес вебсайта
-                    %span (необязательно)
-                  %input{:type => "text"}/
+                    Я согласен с условиями
+                    %a{:href => "#"} договора-оферты
                 %div
-                  %label
-                    Промокод
-                    %span (необязательно)
-                  %input{:type => "text"}/
-              %div
-                %input{:type => "checkbox"}/
-                %label
-                  Я согласен с условиями
-                  %a{:href => "#"} договора-оферты
-              %div
-                %input{:type => "submit"}/
-      %section
-        %header
-          %h2 Отзывы наших партнёров
-        %article.emirates
+                  %input{:type => "submit"}/
+        %section.g.two-thirds
           %header
-            %h3
-              %a{:href => "#"} Emitates
-          %p
-            Текст
-        %article.webjet
+            %h2 Отзывы наших партнёров
+          %article.emirates
+            %header
+              %h3
+                %a{:href => "#"} Emitates
+            %p
+              Текст
+          %article.webjet
+            %header
+              %h3
+                %a{:href => "#"} WebJet
+            %p
+              Текст
+          %article.tripsta
+            %header
+              %h3
+                %a{:href => "#"} Tripsta
+            %p
+              Текст
+        %section.g.one-third
           %header
-            %h3
-              %a{:href => "#"} WebJet
-          %p
-            Текст
-        %article.tripsta
-          %header
-            %h3
-              %a{:href => "#"} Tripsta
-          %p
-            Текст
-      %section
-        %header
-          %h2 Топ-10 выплат за октябрь '12
-        %ul
-          %li
-            Партнёр
-            %span 123456 р.
-          %li
-            Партнёр
-            %span 123456 р.
-          %li
-            Партнёр
-            %span 123456 р.
-          %li
-            Партнёр
-            %span 123456 р.
-          %li
-            Партнёр
-            %span 123456 р.
-          %li
-            Партнёр
-            %span 123456 р.
-          %li
-            Партнёр
-            %span 123456 р.
-          %li
-            Партнёр
-            %span 123456 р.
-        %footer
-          Мы уже выплатили
-          %span 26 159 518 руб.
+            %h2 Топ-10 выплат за октябрь '12
+          %dl.split
+            %dt.split__title
+              Партнёр
+            %dd 123456 р.
+            %dt.split__title
+              Партнёр
+            %dd 123456 р.
+            %dt.split__title
+              Партнёр
+            %dd 123456 р.
+            %dt.split__title
+              Партнёр
+            %dd 123456 р.
+            %dt.split__title
+              Партнёр
+            %dd 123456 р.
+            %dt.split__title
+              Партнёр
+            %dd 123456 р.
+            %dt.split__title
+              Партнёр
+            %dd 123456 р.
+            %dt.split__title
+              Партнёр
+            %dd 123456 р.
+          %footer
+            Мы уже выплатили
+            %span 26 159 518 руб.
       %section
         %header
           %h2 О партнёрской программе TravelPayouts
@@ -176,6 +182,6 @@
             %h3 Как это работает
           %p
             Вы размещаете форму поиска авиабилетов у себя на сайте. Если пользователь заинтересован в покупке авиабилета, а форма отчетливо видна на странице, то он ищет билет, бронирует и покупает его. Вы получаете свою комиссию 50-70% от нашего дохода с проданного авиабилета. Кроме того, мы платим комиссию за бронирование отелей и другие полезные продукты. Вы размещаете форму поиска авиабилетов у себя на сайте. Если пользователь заинтересован в
-    %footer
+    %footer.text-center.islet
       %p
         \© 2556 TravelPayouts
